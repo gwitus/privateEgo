@@ -1,0 +1,10 @@
+# Arquivos ignorados no versionamento por motivos de segurança
+
+privateEgo.csproj
+
+appsettings.json
+
+appsettings.Development.json
+4
+Properties/
+obj/
