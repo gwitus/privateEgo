@@ -53,32 +53,28 @@ nav #links a {
     pointer-events: none;
 }
 
-nav #links select, option {
+nav #optionsNav {
+    appearance: none; /* Remove os estilos padrão */
+    -webkit-appearance: none; /* Estilos específicos do Chrome/Safari */
+    -moz-appearance: none; /* Estilos específicos do Firefox */
     background: transparent;
     font-size: 2.7rem;
     border: none;
     outline: 0 0 0 0;
-    transition: height 0.3s ease-in-out;
-}
-
-nav #links select{
-    transition: all 1s ease;
+    transition: all 0.9s ease;
 }
 
 nav #links option {
     height: 100px;
+    color: black;
+    background-color: #1C8B92;
 }
 
+/* a porra do erro estava aqui */
 nav #links select.open {
-    /* height: 45rem;
-    margin-bottom: 1rem;
-    background: transparent; */
     margin-bottom: 16rem;
-}
-
-nav #links select,option:focus {
-    border: none;
-    outline: 0 0 0 0;
+    background-color: rgb(19, 105, 163);
+    outline: 0;
 }
 
 nav #imageProfile {
