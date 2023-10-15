@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    @* Link *@
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <title>EMANUEL BARBOSA</title>
+</head>
+    <body>
+        <nav>
+            <div id="imageProfile">
+                <img src="/images/profile.jpeg" alt="profile IMG">
+            </div>
+            <div id="links">
+                @* About Me *@
+                <select id="optionsNav" >
+                    <option disabled selected>ABOUT ME</option>
+                    <option><a href="#">EXPERIENCES</a></option>
+                    <option><a href="#">SKILLS</a></option>
+                    <option><a href="#">CERTIFICATIONS</a></option>
+                </select>
+                @* Projects *@
+                <select id="optionsNav2">
+                    <option disabled selected>PROJECTS</option>
+                    <option><a href="#">CORE 2D</a></option>
+                    <option><a href="#"></a>CONSUMPTION API'S</option>
+                    <option><a href="#">PORTFOLIO</a></option>
+                </select>
+                @* SOURCE CODE *@
+                <!---Tenho que ver o que colocar aqui, já quem em Projects já tem os projetos-->
+                <select id="optionsNav3">
+                    <option disabled selected>BASE</option>
+                </select>
+                @* CONTACT *@
+                <div id="contatoDiv">
+                    <a href="#">CONTATO</a>
+                </div>
+                @* javascript *@
+                <script src="/js/select.js"></script>
+            </div>
+            <div id="linkGithub">make from <a href="https://github.com/gwitus">gwitus</a></div>
+        </nav>
+        <main>@RenderBody()</main>
+    </body>
+</html>

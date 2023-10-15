@@ -1,0 +1,111 @@
+
+* {
+    font-size: 67.5%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --greenNav: #1C8B92;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    padding: 0;
+    border: 0;
+    margin: 0px;
+    height: 100vh;
+}
+
+nav {
+    background-color: var(--greenNav);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 4rem;
+    padding-top: 6rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    height: auto;
+    width: 70%;
+}
+
+nav #links a {
+    pointer-events: none;
+}
+
+nav #links select, option {
+    background: transparent;
+    font-size: 2.7rem;
+    border: none;
+    outline: 0 0 0 0;
+    transition: height 0.3s ease-in-out;
+}
+
+nav #links select{
+    transition: all 1s ease;
+}
+
+nav #links option {
+    height: 100px;
+}
+
+nav #links select.open {
+    /* height: 45rem;
+    margin-bottom: 1rem;
+    background: transparent; */
+    margin-bottom: 16rem;
+}
+
+nav #links select,option:focus {
+    border: none;
+    outline: 0 0 0 0;
+}
+
+nav #imageProfile {
+    height: 200px;
+    width: 200px;
+}
+
+nav #contatoDiv a {
+    font-size: 2.7rem;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+nav #linkGithub {
+    font-size: 0.8rem;
+}
+
+nav #linkGithub a {
+    font-size: 0.8rem;
+}
+
+nav #linkGithub a:hover {
+    color: bisque;
+}
+
+#imageProfile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
