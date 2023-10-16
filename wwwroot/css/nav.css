@@ -68,14 +68,16 @@ nav #links option {
     height: 100px;
     color: black;
     background-color: #1C8B92;
-}
-
-/* a porra do erro estava aqui */
-nav #links select.open {
-    margin-bottom: 16rem;
-    background-color: rgb(19, 105, 163);
     outline: 0;
 }
+
+nav select:hover {
+    color: black;
+    outline: 0;
+    background-color: var(--greenNav);
+}
+
+/* nav select :focus {} */
 
 nav #imageProfile {
     height: 200px;
@@ -105,3 +107,24 @@ nav #linkGithub a:hover {
     width: 100%;
     border-radius: 50%;
 }
+
+
+
+
+
+
+
+/* a porra do erro estava aqui */
+/* nav #links select.open {
+    margin-bottom: 16rem;
+    outline: 0;
+}
+
+nav #links select.open:hover {
+    background-color: red;
+}
+
+nav #links select.open:focus {
+    background-color: transparent;
+    outline: 0;
+} */
