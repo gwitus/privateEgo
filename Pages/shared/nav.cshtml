@@ -40,18 +40,20 @@
             </div>
 
             @* link about projects *@
-            <div id="projects">
-                <div id="projectCSharp">
-                    <a href="#">C#</a>
-                    <i class='bx bxs-down-arrow' id="seta"></i>
+            <div id="projects" >
+                <div id="projectCSharp" onclick="validarProjects()">
+                    <a href="#">PROJECTS</a>
+                    <i class='bx bxs-down-arrow' id="seta2"></i>
                 </div>
-                <div id="WEB1"><a href="#">KIT WEB1</a></div>
-                <div id="C"><a href="#">C</a></div>
+                <div id="WEB1"><a href="#">JAVASCRIPT</a></div>
+                <div id="C"><a href="#">C#</a></div>
                 <div id="JAVA"><a href="#">JAVA</a></div>
             </div>
 
             @* Source Code *@
-            <div id="sourceCode"></div>
+            <div id="sourceCode">
+                <div id="gitHub"><a href="#">Code Resource</a></div>
+            </div>
 
             @* Contato *@
             <div id="contatoDiv"></div>
@@ -63,6 +65,7 @@
     <main>@RenderBody()</main>
     @* javascript *@
     <script src="/js/hamb.js"></script>
+    <script src="/js/projects.js"></script>
 </body>
 
 </html>

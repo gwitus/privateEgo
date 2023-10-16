@@ -5,8 +5,7 @@ const i = document.getElementById("seta");
 const contato = document.getElementById("contatoDiv");
 
 // #define size of contato equals 6rem (1 rem == 10px)
-contato.style.position = "absolute";
-contato.style.top = "6rem";
+// contato.style.top = "6rem";
 
 // optionAboutMe.style.display = "none";
 optionAbout.style.display = "none";
