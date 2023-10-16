@@ -9,43 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins:wght@600&display=swap" rel="stylesheet">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    @* title *@ 
+    @* Talvez aqui caiba colocar um viewData *@
     <title>EMANUEL BARBOSA</title>
 </head>
     <body>
         <nav>
-            <div id="imageProfile">
-                <img src="/images/profile.jpeg" alt="profile IMG" draggable="false" ondragstart="return false;">
-            </div>
-            <div id="links">
+            @* image profile *@
+            <div id="imageProfile"><img src="/images/profile.jpeg" alt="profile IMG" draggable="false" ondragstart="return false;"></div>
+            <div id="links" onclick="validarClique()">
                 @* About Me *@
-                <select id="optionsNav" >
-                    <option disabled selected>ABOUT ME</option>
-                    <option id="xp"><a href="#">EXPERIENCES</a></option>
-                    <option><a href="#">SKILLS</a></option>
-                    <option><a href="#">CERTIFICATIONS</a></option>
-                </select>
+                <div id="optionMeAbout">
+                    <a href="#">ABOUT ME</a>
+                    <i class='bx bxs-down-arrow'></i>
+                </div>
+                <div id="optionMe">
+                    <a href="#">EXPERIENCE</a>
+                </div>
+                <div id="optionMe1">
+                    <a href="#">SKILLS</a>
+                </div>
                 @* Projects *@
-                <select id="optionsNav2">
-                    <option disabled selected>PROJECTS</option>
-                    <option><a href="#">CORE 2D</a></option>
-                    <option><a href="#"></a>CONSUMPTION API'S</option>
-                    <option><a href="#">PORTFOLIO</a></option>
-                </select>
+                
                 @* SOURCE CODE *@
                 <!---Tenho que ver o que colocar aqui, já quem em Projects já tem os projetos-->
-                <select id="optionsNav3">
-                    <option disabled selected>BASE</option>
-                </select>
+                
                 @* CONTACT *@
                 <div id="contatoDiv">
                     <a href="#">CONTATO</a>
                 </div>
-                @* javascript *@
-                @* <script src="/js/select.js"></script> *@
             </div>
             <div id="linkGithub">make from <a href="https://github.com/gwitus">gwitus</a></div>
         </nav>
+        
         <main>@RenderBody()</main>
+        @* javascript *@
+        <script src="/js/hamb.js"></script>
     </body>
 </html>
+
+
+
+@* <script src="/js/select.js"></script> *@

@@ -44,44 +44,55 @@ nav #links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
     gap: 3rem;
     height: auto;
     width: 70%;
+    position: relative;
 }
-
-nav #links a {
-    pointer-events: none;
-}
-
-nav #optionsNav {
-    appearance: none; /* Remove os estilos padrão */
-    -webkit-appearance: none; /* Estilos específicos do Chrome/Safari */
-    -moz-appearance: none; /* Estilos específicos do Firefox */
-    background: transparent;
-    font-size: 2.7rem;
-    border: none;
-    outline: 0 0 0 0;
-    transition: all 0.9s ease;
-}
-
-nav #links option {
-    height: 100px;
-    color: black;
-    background-color: #1C8B92;
-    outline: 0;
-}
-
-nav select:hover {
-    color: black;
-    outline: 0;
-    background-color: var(--greenNav);
-}
-
-/* nav select :focus {} */
 
 nav #imageProfile {
-    height: 200px;
-    width: 200px;
+    height: 30%;
+    width: 50%;
+}
+
+#imageProfile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 2);
+}
+
+#optionMeAbout {
+    display: flex;
+    gap: 1rem;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+#optionMeAbout a:hover {
+    color: #584aa7;
+    transition: all 0.4s ease-in-out;
+}
+
+#optionMe, #optionMe1 {
+    height: 100px;
+    width: auto;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    padding-left: 2rem;
+    position: absolute;
+}
+
+#optionMe, #optionMe1 a {
+    cursor: pointer;
+}
+
+#optionMeAbout i {
+    font-size: 1rem;
 }
 
 nav #contatoDiv a {
@@ -101,30 +112,3 @@ nav #linkGithub a {
 nav #linkGithub a:hover {
     color: bisque;
 }
-
-#imageProfile img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-
-
-
-
-
-
-/* a porra do erro estava aqui */
-/* nav #links select.open {
-    margin-bottom: 16rem;
-    outline: 0;
-}
-
-nav #links select.open:hover {
-    background-color: red;
-}
-
-nav #links select.open:focus {
-    background-color: transparent;
-    outline: 0;
-} */
