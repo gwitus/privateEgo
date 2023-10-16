@@ -25,9 +25,9 @@
             @* image profile *@
             <div id="imageProfile"><img src="/images/profile.jpeg" alt="profile IMG" draggable="false"ondragstart="return false;"></div>
             @* Links about me *@
-            <div id="ego" onclick="validarClique()">
+            <div id="ego" onclick="egoHability()">
                 @* About Me *@
-                <div id="optionMeAbout">
+                <div id="optionMeAbout" >
                     <a href="#">ABOUT ME</a>
                     <i class='bx bxs-down-arrow' id="seta"></i>
                 </div>
@@ -40,8 +40,8 @@
             </div>
 
             @* link about projects *@
-            <div id="projects" >
-                <div id="projectCSharp" onclick="validarProjects()">
+            <div id="projects" onclick="projectsHability()">
+                <div id="projectCSharp"">
                     <a href="#">PROJECTS</a>
                     <i class='bx bxs-down-arrow' id="seta2"></i>
                 </div>
@@ -52,24 +52,18 @@
 
             @* Source Code *@
             <div id="sourceCode">
-                <div id="gitHub"><a href="#">Code Resource</a></div>
+                <div id="gitHub"><a href="#">FONT CODE</a></div>
             </div>
 
             @* Contato *@
             <div id="contatoDiv"></div>
-[
+
             <div id="linkGithub">make from <a href="https://github.com/gwitus">gwitus</a></div>
         </div>
     </nav>
     @* main *@
     <main>@RenderBody()</main>
     @* javascript *@
-    <script src="/js/hamb.js"></script>
     <script src="/js/projects.js"></script>
 </body>
-
 </html>
-
-
-
-@* <script src="/js/select.js"></script> *@
