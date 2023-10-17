@@ -70,7 +70,6 @@ nav #content {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-    background-color: red;
     height: 60%;
 }
 
@@ -97,7 +96,6 @@ nav #content {
     position: absolute;
     top: 0;
     left: 1px;
-    background-color: yellow;
 }
 
 #hiddenItems span {
@@ -119,7 +117,6 @@ nav #content {
     position: absolute;
     top: 0;
     left: 1px;
-    background-color: yellow;
 }
 
 .section li {
@@ -132,6 +129,10 @@ nav #content {
 .section li i {
     font-size: 2.5rem;
     padding-right: 1rem;
+}
+
+.section li i:hover {
+    animation: move 1s linear infinite;
 }
 
 .section li:hover {
@@ -160,4 +161,13 @@ nav #linkGithub a {
 
 nav #linkGithub a:hover {
     color: var(--bisqueColor);
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
