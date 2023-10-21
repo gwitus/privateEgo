@@ -1,0 +1,42 @@
+@page
+@model privateEgo.Pages.experience
+@{
+    Layout = "~/Pages/shared/nav.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <link rel="stylesheet" href="~/css/xp.css">
+</head>
+
+<main>
+    <h1>EXPERIENCES IN ALL JOB's</h1>
+
+    <div class="job">
+        @* Eldorado *@
+        <div id="services">
+            <img src="~/images/Eldorado.jpeg" alt="Eldorado Image">
+            <div id="textJobs">
+                <div id="topText">ELDORADO BRASIL CELULOSE - DEZ/2022 | AGO/2023</div>
+                <div id="bottomText"> • HELP DESK • FIELD SERVICE • SERVICE DESK • TELECOM</div>
+            </div>
+        </div>
+        @* Brasilcard *@
+        <div id="services">
+            <img src="~/images/Brasilcard.jpeg" alt="Brasilcard prédio">
+            <div id="textJobs">
+                <div id="topText">BOLTCARD OUT/2020 - APRIL/2021</div>
+                <div id="bottomText">• SUPORTE A POS REMOTO • MANUTENÇÃO DE SISTEMA TEF • HELP DESK</div>
+            </div>
+        </div>
+        @* Montanna *@
+        <div id="services">
+            <img src="~/images/montanna.jpeg" alt="Antigo prédio Montanna">
+            <div id="textJobs"> 
+                <div id="topText">MONTANNA DISTRIBUIDORA DE BEBIDAS JAN/2020 - OUT/2020</div>
+                <div id="bottomText">• BALCONISTAS • ATENDIMENTO AO CLIENTE • REPOSITOR</div>
+            </div>
+        </div>
+    </div>
+</main>
