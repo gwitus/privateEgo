@@ -8,3 +8,5 @@ appsettings.Development.json
 
 Properties/
 obj/
+
+.fake

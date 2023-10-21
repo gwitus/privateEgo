@@ -20,79 +20,93 @@
 </head>
 
 <body>
-    <nav>
-        <div id="content">
-            @* image profile *@
-            <div id="imageProfile"><img src="/images/profile.jpeg" alt="profile IMG" draggable="false"
-                    ondragstart="return false;"></div>
-            @* Links about me *@
-            <div id="container">
-                <div class="section">
-                    @* oculto *@
-                    <div id="hiddenItems" onclick="exe()">
-                        <ul>
-                            <li>
-                                <i class='bx bxs-home-alt-2'></i>
-                                <span>ABOUT ME</span>
-                            </li>
-                        </ul>
-                    </div>
-                    @* item via javascript *@
-                    <ul id="items">
-                        <li id="item">
-                            <i class='bx bxs-home-alt-2'></i>
-                            <a href="~/index">ABOUT ME</a>
-                        </li>
-                        <li id="item">
-                            <i class='bx bx-knife'></i>
-                            <a href="#">SKILLS</a>
-                        </li>
-                        <li id="item">
-                            <i class='bx bx-expand-horizontal'></i>
-                            <a href="#">EXPERIENCE</a>
-                        </li>
-                    </ul>
-                </div>
-                @* Projects *@
-                <div class="section">
-                    @* Links about me *@
-                    <div id="container">
-                        <div class="section">
-                            @* oculto *@
-                            <div id="hiddenItems" onclick="exeProjects()">
-                                <ul>
-                                    <li>
-                                        <i class='bx bxs-data' ></i>
-                                        <span>PROJETOS</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            @* item via javascript *@
-                            <ul id="items">
-                                <li id="item">
-                                    <i class='bx bxs-terminal'></i>
-                                    <a href="~/index">C#</a>
-                                </li>
-                                <li id="item">
-                                    <i class='bx bxl-javascript'></i>
-                                    <a href="#">JAVASCRIPT</a>
-                                </li>
-                                <li id="item">
-                                    <i class='bx bxl-java'></i>
-                                    <a href="#">JAVA</a>
-                                </li>
-                                <li id="item">
-                                    <i class='bx bx-code' ></i>
-                                    <a href="#">C</a>
+    <div class="containerMain">
+        <nav>
+            <div id="content">
+                @* image profile *@
+                <div id="imageProfile"><img src="/images/profile.jpeg" alt="profile IMG" draggable="false"
+                        ondragstart="return false;"></div>
+                @* Links about me *@
+                <div id="container">
+                    <div class="section">
+                        @* oculto *@
+                        <div id="hiddenItems" onclick="exe()">
+                            <ul>
+                                <li>
+                                    <i class='bx bxs-home-alt-2'></i>
+                                    <span>WHO I'M</span>
                                 </li>
                             </ul>
                         </div>
+                        @* item via javascript *@
+                        <ul id="items">
+                            <li id="item">
+                                <i class='bx bxs-home-alt-2'></i>
+                                <a href="~/index">ABOUT ME</a>
+                            </li>
+                            <li id="item">
+                                <i class='bx bx-expand-horizontal'></i>
+                                <a href="#">EXPERIENCE</a>
+                            </li>
+                            <li id="item">
+                                <i class='bx bx-knife'></i>
+                                <a href="#">PERSONAL BLOG</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div id="linkGithub">make from <a href="https://github.com/gwitus">gwitus</a></div>
+                    @* Projects *@
+                    <div class="section">
+                        @* Links about me *@
+                        <div id="container">
+                            <div class="section">
+                                @* oculto *@
+                                <div id="hiddenItems" onclick="exeProjects()">
+                                    <ul>
+                                        <li>
+                                            <i class='bx bxs-data'></i>
+                                            <span>PROJECTS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                @* item via javascript *@
+                                <ul id="items">
+                                    <li id="item">
+                                        <i class='bx bxs-terminal'></i>
+                                        <a href="~/index">C#</a>
+                                    </li>
+                                    <li id="item">
+                                        <i class='bx bxl-javascript'></i>
+                                        <a href="#">JAVASCRIPT</a>
+                                    </li>
+                                    <li id="item">
+                                        <i class='bx bxl-java'></i>
+                                        <a href="#">JAVA</a>
+                                    </li>
+                                    <li id="item">
+                                        <i class='bx bx-code'></i>
+                                        <a href="#">C</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="linkGithub">make from <a href="https://github.com/gwitus">gwitus</a></div>
+                    </div>
                 </div>
-    </nav>
-    @* main *@
-    <main>@RenderBody()</main>
+        </nav>
+        @* main *@
+        <main>
+            @RenderBody()
+        </main>
+
+        <div id="floatBox">
+            <div id="libras">
+                <img src="~/images/libras.png" alt="LibrasAPi">
+            </div>
+            <div id="dayOrNight">
+                <img src="~/images/moon.png" alt="darkAndLight">
+            </div>
+        </div>
+    </div>
     @* javascript *@
     <script src="/js/projects.js"></script>
 </body>
