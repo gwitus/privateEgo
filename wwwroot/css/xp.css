@@ -21,29 +21,42 @@ main h1 {
     flex-direction: column;
     width: calc(100% - 1rem);
     height: 100%;
-    gap: 1rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 #services {
-    height: 15rem;
-    width: 95%;
-    flex-wrap: wrap;
+    height: 17rem;
+    max-width: 95%;
+    flex-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 1.4rem;
     padding-left: 3rem;
+    background-color: rgb(243, 237, 237);
+    transition: background-color 0.3s;
 }
 
-#services :hover {
+#services:hover {
     background-color: #73cbd1;
-}
-
-#services img {
-    max-height: 100%;
-    max-width: 30rem;
     border-radius: 1rem;
 }
+
+#imageService {
+    border-radius: 1rem;
+    object-fit: fill;
+    max-width: 270px;
+    width: 27rem;
+    height: 100%;
+} 
+
+#services img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
 
 #textJobs {
     height: auto;

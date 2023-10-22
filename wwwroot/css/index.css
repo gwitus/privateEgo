@@ -3,14 +3,16 @@ li {
 }
 
 main {
-    height: 100%;
+    height: 100vh;
     width: 92rem;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-y: auto;
 }
+
 
 #curriculum {
     padding: 0;
@@ -29,6 +31,11 @@ main {
 
 #head h2,a {
     font-size: 3rem;
+}
+
+#head h3 {
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
 }
 
 #head ul {
@@ -103,4 +110,5 @@ main {
     display: flex;
     gap: 1rem;
     align-items: center;
+    margin-bottom: 10rem;
 }

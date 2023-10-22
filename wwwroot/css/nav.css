@@ -31,25 +31,30 @@ body {
 }
 
 .containerMain {
-    background-color: white;
+    background-color: rgb(243, 237, 237);
     height: 100vh;
     width: 130rem;
     display: grid;
     grid-template-columns: 2fr 5fr;
     position: relative;
-    box-shadow: -3px 1px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px 0px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 main {
     height: 100%;
     width: 100%;
+    overflow-y: auto;
 }
+
+::-webkit-scrollbar-thumb {
+    background: var(--greenNav);
+  }
 
 nav {
     background-color: var(--greenNav);
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 nav #content {
@@ -61,7 +66,7 @@ nav #content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 #imageProfile {
@@ -164,6 +169,7 @@ nav #linkGithub {
     position: absolute;
     bottom: 1rem;
     font-size: 0.8rem;
+    justify-self: center;
 }
 
 nav #linkGithub a {
