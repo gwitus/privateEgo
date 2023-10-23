@@ -1,0 +1,17 @@
+#blogContent {
+    width: 95%;
+    height: calc(100% - 30px);
+    background: red;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#blogContent h2 {
+    color: blue;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}

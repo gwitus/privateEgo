@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace privateEgo.Pages
+namespace privateEgo.Pages.projects
 {
-    public class index : PageModel
+    public class CSharp : PageModel
     {
-        private readonly ILogger<index> _logger;
+        private readonly ILogger<CSharp> _logger;
 
-        public index(ILogger<index> logger)
+        public CSharp(ILogger<CSharp> logger)
         {
             _logger = logger;
         }

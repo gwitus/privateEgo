@@ -1,0 +1,46 @@
+main {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.contentSharp {
+    height: 100vh;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-y: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#containerProject {
+    height: 20rem;
+    width: 30rem;
+    background-color: #4d8f94;
+    border-radius: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#containerProject img {
+    object-fit: fill;
+    max-width: 70%;
+    max-height: 80%;
+}
+
+#containerProject a {
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#containerProject a:hover {
+    color: rgb(129, 230, 188);
+}

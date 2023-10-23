@@ -8,5 +8,4 @@ appsettings.Development.json
 
 Properties/
 obj/
-
-bin/
+bin/debug/
