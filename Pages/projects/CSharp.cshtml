@@ -11,10 +11,12 @@
 <main>
     <div class="contentSharp">
         @* Previsão do Tempo *@
-        <div id="containerProject">
+        <div id="containerProject" onmouseover="trocarImagem(this)" onmouseout="restaurarImagem(this)">
             <img src="/images/thunder.png" alt="icone de temperatura">
+            <img src="/images/chuva.gif" alt="gif animado" id="chuva">
             <a href="">WEATHER CAST</a>
         </div>
+
         @* Jogo da Forca *@
         <div id="containerProject">
             <img src="/images/gallow.png" alt="icone de temperatura">
@@ -23,3 +25,5 @@
     </div>
     <footer></footer>
 </main>
+
+<script src="/js/csharp.js"></script>

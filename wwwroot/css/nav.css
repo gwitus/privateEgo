@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;    
     font-family: 'Poppins', sans-serif;
+    -webkit-user-drag: none;
 }
 
 :root {
